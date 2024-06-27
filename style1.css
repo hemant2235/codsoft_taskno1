@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: rgba(0, 0, 0, 0.7) url('background.jpeg') center center fixed;
+    background-size: cover;
+    background-blend-mode: darken;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.circle {
+    width: 100px; /* Adjust this value according to your image size */
+    height: 100px; /* Adjust this value according to your image size */
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This ensures the image covers the circle without distortion */
+  }
+  
+
+
+.navbar ul li{
+    display: inline-block;
+    padding: 18px;
+    text-transform: uppercase;
+    align-items: center;    
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 4px;
+    transition: 1s;
+    font-size: larger;
+}
+
+.navbar ul li a:hover{
+    box-shadow: 0 3px 50px rgb(0, 94, 255) inset,0 3px 50px orangered inset,
+    0 3px 50px orangered inset,0 3px 50px orangered inset;
+}
+
+.navbar .reservation{
+    padding: 8px;
+    background-color: rgb(8, 0, 255);
+}
+
+.content{
+    position: absolute;
+    color: #fff;
+    top: 40%;
+    left: 30%;
+}
+
+.content h3{
+    font-family: sans-serif;
+    font-size: 25px;
+    margin-right: 10%;
+    margin-left: 7%;
+}
+
+.content h1{
+    font-size: 60px;
+}
+
+.content p{
+    font-size: 20px;
+    margin-top: 17px;
+    align-items: center;
+}
+
+.search{
+    position: absolute;
+    margin-top: 25%;
+    margin-left: 42%;
+}
+
+.search input{
+    outline: none;
+    border: none;
+    padding: 12px 40px;
+    size: 1em;
+    width: 100%;
+}
+
+.submit{
+    position: absolute;
+    margin-top: 29%;
+    margin-left: 49%;
+}
+
+.submit a{
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 25px;
+    background-color: rgb(102, 0, 255);
+}
